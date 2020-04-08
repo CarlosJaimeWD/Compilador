@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #333642;
+    font-family: 'Ubuntu';
+}
+
+.wrapper {
+    width: 100vw;
+    height: calc(100vh - 60px);
+    display: flex;
+}
+
+.codeBox {
+    width: 48%;
+    margin: 1%;
+    height: calc(100% - 2%);
+    background: #1d1e22;
+    display: flex;
+}
+
+.codeInputCounter, .codeOutputCounter {
+    width: 40px;
+    color: #666;
+    text-align: center;
+    font-size: 13px;
+}
+
+.codeInputCounter p, .codeOutputCounter p {
+    line-height: 25px;
+}
+
+.code {
+    width: calc(100% - 40px);
+    caret-color: #fff;
+    color: white;
+    line-height: 25px;
+}
+
+.analyzeButton {
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background: #47cf73;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 2px;
+
+    margin-right: 10px;
+}
+
+.headerBox {
+    width: 100%;
+    height: 60px;
+    background: #1e1f26;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infoBox {
+    display: flex;
+}
+
+.info p:nth-child(1) {
+    color: #fff; 
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.info p:nth-child(2) {
+    color: #999;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.logo {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.reservedWord {
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.token {
+    color: cyan;
+}
+
+.string {
+    color: green;
+}
+
+.identifier {
+    color: white;
+}
+
+.number {
+    color: orange;
+}
+
+.exit {
+    color: red;
+}
